@@ -1,0 +1,54 @@
+<div class="header">
+  <h5>个人中心</h5>
+</div>
+<div class="content">
+  <div *ngIf="!isLogin" class="setting" (click)="login()">
+    <img src="{{HeaderImgUrl}}" ><span >请点击登录</span><span></span>
+  </div>
+  <div *ngIf="isLogin" class="setting">
+    <img src="{{HeaderImgUrl}}" ><span></span><span >欢迎您,{{username}}</span>
+  </div>
+
+  <div class="settings-list">
+    <div class="settings-more">
+      <img src="../../../assets/imgs/settings_search.png"><span>我的找料</span> <strong (click)="goMoreOrderList()"><img src="../../../assets/imgs/arrows_right.png"></strong>
+    </div>
+    <div class="lists">
+      <ul>
+        <li *ngFor="let list of lists" (click)="goDetail(list.id)">
+          <span>{{list.field_desc}}</span>
+          <span>{{list.is_payed?'已付款':'未付款'}}</span>
+          <span>详情>></span>
+        </li>
+      </ul>
+      <div class="noDates" *ngIf="!hasLists">暂无数据</div>
+    </div>
+  </div>
+  <div class="settings_address">
+    <div class="settings-more">
+      <img src="../../../assets/imgs/settings_dizhi.png"><span>我的地址</span><!--<img src="../../../assets/imgs/arrows_right.png">-->
+    </div>
+    <div class="address">
+      广东省广州市花都区镜湖大道南33号
+    </div>
+  </div>
+
+  <!--<div class="settings_service">
+    <div class="settings-more">
+      <img src="../../../assets/imgs/settings_fuwu.png"><span>我的服务</span>
+    </div>
+    <ul class="cl">
+      <li><img src="../../../assets/imgs/settings_shoucang.png"></li>
+      <li><img src="../../../assets/imgs/settings_wuliu.png"></li>
+      <li><img src="../../../assets/imgs/settings_jinrong.png"></li>
+      <li><img src="../../../assets/imgs/settings_bangzu.png"></li>
+      <li><img src="../../../assets/imgs/settings_tousu.png"></li>
+      <li><img src="../../../assets/imgs/settings_kefu.png"></li>
+    </ul>
+  </div>-->
+
+  <div class="logout btn" (click)="logout()" *ngIf="isLogin">退出登录</div>
+</div>
+
+<app-footer [select]="4"></app-footer>
+

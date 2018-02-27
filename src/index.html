@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>一大批</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/plugs/layui-v2.2.5/layui/css/layui.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <script src="assets/plugs/jquery-3.3.1.min.js"></script>
+  <script src="assets/plugs/layui-v2.2.5/layui/layui.all.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script type="text/javascript">
+    new function (){
+      var _self = this;
+      _self.width = 750;//设置默认最大宽度
+      _self.fontSize = 100;//默认字体大小
+      _self.widthProportion = function(){
+        var p = (document.body&&
+          document.body.clientWidth ||
+          document.getElementsByTagName("html")[0].offsetWidth)/_self.width;
+        return p>1?1:p<0.5?0.5:p;
+      };
+      _self.changePage = function(){
+        document.getElementsByTagName("html")[0].setAttribute("style","font-size:"+_self.widthProportion()*_self.fontSize+"px !important");
+      }
+      _self.changePage();
+      window.addEventListener("resize",function(){_self.changePage();},false);
+    };
+
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

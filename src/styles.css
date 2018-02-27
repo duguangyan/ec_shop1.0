@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+.layui-m-layershade{
+  background-color: rgba(0,0,0,0);
+}
+.layui-layer-msg{
+  box-shadow: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: .1rem;
+  border: none;
+}

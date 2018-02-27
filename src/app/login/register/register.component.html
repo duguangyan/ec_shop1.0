@@ -1,0 +1,38 @@
+<div class="header">
+  <span (click)="goback()"><img src="../../../../assets/imgs/arrows_left.png"></span> <h5>注册</h5>
+</div>
+<div class="content">
+  <div class="logo">
+    <img src="../../../assets/imgs/logo_small.png" alt="首页图片">
+  </div>
+  <div class="from">
+    <div><input type="text" [(ngModel)]="phone" placeholder="请输入你的手机号"></div>
+    <div>
+      <input type="text" [(ngModel)]="code" placeholder="输入验证码">
+      <a class="reg-a1 btn" *ngIf="isSends" href="javascript:void(0)" (click)="getMsgCode()">获取验证码</a>
+      <a class="reg-a2 btn" *ngIf="!isSends" href="javascript:void(0)">倒数{{sends}}秒</a>
+    </div>
+    <div class="forget-3-2" *ngIf="isPassWordShow">
+      <input type="password" [(ngModel)]="passWord" placeholder="请设置您的密码(6-20个字符之间)">
+      <div (click)="passWordShow()">
+        <img src="../../../assets/imgs/close_password.png">
+      </div>
+    </div>
+    <div class="forget-3-1" *ngIf="!isPassWordShow">
+      <input type="text" [(ngModel)]="passWord" placeholder="请设置您的密码(6-20个字符之间)">
+      <div (click)="passWordShow()">
+        <img src="../../../assets/imgs/open_password.png">
+      </div>
+    </div>
+    <div class="formRight"  (click)="agreeTodo()">
+      <div class="icon">
+        <span *ngIf="isAgree"></span>
+        <img *ngIf="!isAgree" src="../../../assets/imgs/register_right.png" alt="">
+      </div>
+      <p>我已阅读并同意<span (click)="goLoginProtocol($event)">《一大批用户服务协议》 </span></p>
+    </div>
+
+    <div class="submit btn" (click)="register()">完成注册</div>
+  </div>
+</div>
+<app-footer [select]="3"></app-footer>

@@ -1,0 +1,138 @@
+.detail .title{
+  text-align: center;
+  line-height: .6rem;
+  font-size: .3rem;
+  color: #333;
+  font-weight: 600;
+  padding: .1rem 0;
+}
+.detail .form {
+  border-top: 10px solid #efeff4;
+  border-bottom: 10px solid #efeff4;
+}
+.detail p{
+  font-size: .24rem;
+  color: #333;
+  margin-left: 30%;
+}
+.detail span{
+  margin-left: .2rem;
+}
+.detail h5{
+  font-size: .24rem !important;
+}
+.describe {
+  margin-bottom: .4rem;
+
+}
+.describe h5{
+  text-align: center;
+  font-size: .24rem;
+  color: #333;
+  line-height: .6rem;
+}
+.describe div{
+  width: 60%;
+  margin-left: 20%;
+  height: 1.6rem;
+  border-radius:5px ;
+  border: 1px solid #e2e2e2;
+  font-size: .24rem;
+  color: #333;
+  padding: .1rem;
+  overflow-y: auto;
+}
+
+.way {
+  border-top: 10px solid #efeff4;
+  padding: .2rem 0;
+}
+.way h5 {
+  text-align: center;
+  font-size: .24rem;
+  color: #333;
+}
+.way span{
+  font-size: .24rem;
+  margin-left: .2rem;
+  color:#666 ;
+}
+
+.wayContent1 p{
+  font-size: .24rem;
+  color: #333;
+  text-align: center;
+}
+
+
+.wayContent2 ul {
+  padding-left: 0;
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: .2rem;
+}
+.wayContent2 ul li {
+  float: left;
+  width: 1.5rem;
+  padding-left: .2rem;
+}
+.wayContent2 ul li p{
+  margin-left: 0;
+}
+.wayContent2 ul li div {
+  height: 2rem;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  border-radius:.1rem ;
+}
+.wayContent2 ul li img{
+  height: 100%;
+  width: 100%;
+}
+
+.wayContent2 ul li p{
+  text-align: center;
+  font-size: .24rem;
+  color: #666;
+}
+
+.wayContent3 p{
+  text-align: center;
+  font-size: .24rem;
+  color: #333;
+  margin-left: 0;
+}
+.order{
+  padding: .2rem 0;
+}
+.order {
+  border-top: 10px solid #efeff4;
+}
+.order p {
+  margin-left: 20%;
+}
+.order span{
+  font-size: .24rem;
+  color: #333;
+  margin-left: .1rem;
+  padding: 0 .05rem;
+}
+.order i{
+  position: relative;
+  top: .1rem;
+}
+.payBtn{
+  line-height: .6rem;
+  background-color: #d5393c;
+  text-align: center;
+  margin-top: .4rem;
+  border-radius: 5px;
+  margin-left: 30%;
+  color: #fff!important;
+  text-decoration: none;
+  margin-bottom: .6rem;
+}
+.form{
+  padding: .2rem 0;
+}

@@ -1,0 +1,64 @@
+#appOrderListsPagination{
+  text-align: center;
+}
+.navs{
+  height: 1rem;
+  padding: 0 .1rem;
+  background-color: #fafafa;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.navs ul li {
+  width: 25%;
+  text-align: center;
+  line-height: 1rem;
+  float: left;
+  font-size: .24rem;
+}
+.navs ul a{
+  color: #999;
+}
+
+.lists ul li {
+  line-height: .8rem;
+  height: .8rem;
+  margin-top: .2rem;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #fafafa;
+  font-size: .24rem;
+  color: #333;
+  padding-left: .2rem;
+}
+.lists ul li span:nth-child(1){
+  float: left;
+  display: inline-block;
+  width: 50%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  padding-right: 20px;
+}
+.lists ul li span:nth-child(2){
+  float: left;
+  width: 20%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  padding-right: 20px;
+}
+.lists ul li span:nth-child(3){
+  float: right;
+  padding-right: .1rem;
+}
+
+.noList{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.noList p{
+  color: #aaaaaa;
+  font-size: .3rem;
+  text-align: center;
+}
+

@@ -1,0 +1,104 @@
+.logo{
+  text-align: center;
+  overflow: hidden;
+}
+.logo img{
+  width: 3rem;
+}
+.from{
+  width: 100%;
+  overflow: hidden;
+}
+.from div input{
+  height: 1rem;
+  line-height: 1rem;
+  font-size: .3rem;
+  width: 100%;
+  color: #333;
+  border-bottom: 1px solid #e2e2e2;
+  padding-left: .2rem;
+}
+.from div:nth-child(1){
+  border-top: 1px solid #e2e2e2;
+}
+.from div:nth-child(2){
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.from div:nth-child(2) input{
+  width: 60%;
+  border: none;
+}
+.forget-3-1,.forget-3-2{
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  margin-top: .6rem;
+}
+.forget-3-2,.forget-3-1{
+  position: relative;
+}
+.forget-3-1 input,.forget-3-2 input{
+  border: none !important;
+}
+.forget-3-1>div,.forget-3-2>div{
+  width: .6rem;
+  height: .6rem;
+  position: absolute;
+  right: .2rem;
+  top: .35rem;
+  border: none !important;
+}
+.forget-3-1>div>img,.forget-3-2>div>img{
+  width: 100%;
+}
+.formRight{
+  position: relative;
+  font-size: .2rem;
+  text-align: right;
+  margin-right: .2rem;
+  margin-top: .2rem;
+  text-align: center;
+}
+.formRight span{
+  color: #d5393c;
+}
+.icon{
+  width: .2rem;
+  height: .2rem;
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  left: 1rem;
+  border: none !important;
+  top: .05rem;
+}
+.icon img{
+  width: 115%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.icon span{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #666;
+  border-radius: 50%;
+}
+.submit{
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  font-size: .3rem;
+  height: .8rem;
+  line-height: .8rem;
+  margin-top: 1rem;
+  padding: 0;
+  margin-bottom: .1rem;
+}
+.reg-a2{
+  background-color: #999;
+}
