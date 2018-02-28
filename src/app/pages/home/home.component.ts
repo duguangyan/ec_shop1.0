@@ -13,6 +13,7 @@ declare var $:any;
 export class HomeComponent implements OnInit {
 
   public isLogin: boolean = false;
+  private mySwiper: any;
   constructor(
     public activatedRoute: ActivatedRoute,   //这里需要注入ActivatedRoute模块
     public router: Router,
@@ -28,14 +29,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     //console.log(1);
-    //首页轮播
-    var mySwiper = new Swiper('.swiper-container', {
-      autoplay:true,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
 
+    //首页轮播图
+    this.swiper();
     //交易动态轮播
     this.dynamic();
   }
@@ -64,6 +60,18 @@ export class HomeComponent implements OnInit {
         $(".index-dynamic-p").css('left','240px');
       }
     },1000)
+
+  }
+
+  //轮播图
+  swiper(){
+    //首页轮播
+   this.mySwiper = new Swiper('.swiper-container', {
+      autoplay:true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
 
   }
 }

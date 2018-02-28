@@ -25,6 +25,7 @@
       "check-else",
       "check-whitespace"
     ],
+    "no-var-keyword":false,
     "typedef-whitespace": false,
     "trailing-comma": false,
     "ordered-imports": false,
